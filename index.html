@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>스쿨가디언즈</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,6 +46,7 @@
   color-scheme:dark;
 }
 *{box-sizing:border-box}
+[hidden]{display:none !important}   /* 단독 페이지에서는 display를 지정한 요소의 hidden이 안 먹는다(모달·화면 전환) */
 body{
   margin:0; padding-block:16px 28px;
   padding-left:max(16px, env(safe-area-inset-left, 0px));
@@ -5251,3 +5257,4 @@ function gateStart(){
 gateButton();
 gateStart();
 </script>
+</html>
